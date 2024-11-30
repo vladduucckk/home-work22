@@ -1,0 +1,38 @@
+<table>
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Average Rating</th>
+            <th>Number of Reviews</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book_2 in books_2 %}
+        <tr>
+            <td>{{ book_2.title }}</td>
+            <td>{{ book_2.author.name }}</td>
+            <td>{{ book_2.avg_rating }}</td>
+            <td>{{ book_2.review_count }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Average Rating of Books by Each Author</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Author</th>
+            <th>Average Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for author_2 in authors_2 %}
+        <tr>
+            <td>{{ author_2.name }}</td>
+            <td>{{ author_2.avg_author_rating }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

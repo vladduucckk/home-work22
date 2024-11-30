@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Статус завдання</title>
+</head>
+<body>
+    <h1>Статус завдання</h1>
+    <p>Статус: {{ result.status }}</p>
+    {% if result.status == 'SUCCESS' %}
+        <p>Результат: {{ result.result }}</p>
+    {% elif result.status == 'FAILURE' %}
+        <p>Помилка: {{ result.result }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>compare time</title>
+</head>
+<body>
+<h1>Нажміть на кнопку старт, щоб порівняти час створення записів без оптимізації та з оптимізацією</h1>
+<form method="post">
+    {% csrf_token %}
+    <button>start</button>
+</form>
+<br><br>
+<hr>
+<b><p>Без оптимізації: {{ no_opt }}</p></b>
+<b><p>selected_related оптимізація: {{ opt }}</p></b>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>row sql</title>
+</head>
+<body>
+<h1>row sql with %s for security(sql injection)</h1>
+<i><p>Всього книг: {{ total_books }}</p></i>
+<i><p>Автори які мають книги більш ніж з 10 відгуками: </p></i>
+{% for i in authors %}
+    {{ i.name }}
+    <br>
+    <hr>
+{% endfor %}
+</body>
+</html>
